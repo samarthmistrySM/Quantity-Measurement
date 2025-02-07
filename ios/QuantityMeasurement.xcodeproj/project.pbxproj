@@ -9,9 +9,19 @@
 /* Begin PBXBuildFile section */
 		0C80B921A6F3F58F76C31292 /* libPods-QuantityMeasurement.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-QuantityMeasurement.a */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		18CE20E210D24AE3831C2F48 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1A152C2C181B44E889D2AE04 /* Poppins-Medium.ttf */; };
+		1988D02DBAE848B9B7386985 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 932D61BE1A8F426C85E45340 /* Poppins-SemiBold.ttf */; };
+		2F352AF9BAB343A0BD90C17F /* CormorantGaramond-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7776683D94BF49D086A4371F /* CormorantGaramond-Bold.ttf */; };
+		3803C41FAB48459293F34AA9 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E1C7AE1C4B84AD29EC6F4A1 /* Poppins-Bold.ttf */; };
+		4B9EA2770DF94B0FA68E6E69 /* Cormorant Garamond.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 347E515C4BE740A5896E039F /* Cormorant Garamond.ttf */; };
+		4ECBC804390147B19E5A3B0D /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14B744694B98426AAA6EEAED /* Poppins-Thin.ttf */; };
+		6FD4A0946A024B1085A64A89 /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50909C6506B9438CA91590B4 /* Poppins-Black.ttf */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		A83A4EA77F71466BB6303C32 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC9E6625022C493D9E6D3176 /* Poppins-Regular.ttf */; };
 		BBDCE8E09D040D23F0B1E09D /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
+		C6A5439E2D69416C8A08725E /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7F00C1A4A8784C039BC9C2EA /* Poppins-ExtraLight.ttf */; };
+		D1F8C6B6A0BB4F8789DACA71 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 15436EE2ED43405B99C694E1 /* Poppins-Light.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,11 +29,21 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = QuantityMeasurement/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = QuantityMeasurement/Info.plist; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = QuantityMeasurement/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		14B744694B98426AAA6EEAED /* Poppins-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Thin.ttf"; path = "../assets/fonts/Poppins-Thin.ttf"; sourceTree = "<group>"; };
+		15436EE2ED43405B99C694E1 /* Poppins-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Light.ttf"; path = "../assets/fonts/Poppins-Light.ttf"; sourceTree = "<group>"; };
+		1A152C2C181B44E889D2AE04 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Medium.ttf"; path = "../assets/fonts/Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		347E515C4BE740A5896E039F /* Cormorant Garamond.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Cormorant Garamond.ttf"; path = "../assets/fonts/Cormorant Garamond.ttf"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-QuantityMeasurement.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuantityMeasurement.debug.xcconfig"; path = "Target Support Files/Pods-QuantityMeasurement/Pods-QuantityMeasurement.debug.xcconfig"; sourceTree = "<group>"; };
+		50909C6506B9438CA91590B4 /* Poppins-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Black.ttf"; path = "../assets/fonts/Poppins-Black.ttf"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-QuantityMeasurement.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuantityMeasurement.release.xcconfig"; path = "Target Support Files/Pods-QuantityMeasurement/Pods-QuantityMeasurement.release.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-QuantityMeasurement.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QuantityMeasurement.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = QuantityMeasurement/AppDelegate.swift; sourceTree = "<group>"; };
+		7776683D94BF49D086A4371F /* CormorantGaramond-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "CormorantGaramond-Bold.ttf"; path = "../assets/fonts/CormorantGaramond-Bold.ttf"; sourceTree = "<group>"; };
+		7F00C1A4A8784C039BC9C2EA /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-ExtraLight.ttf"; path = "../assets/fonts/Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = QuantityMeasurement/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8E1C7AE1C4B84AD29EC6F4A1 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Bold.ttf"; path = "../assets/fonts/Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		932D61BE1A8F426C85E45340 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-SemiBold.ttf"; path = "../assets/fonts/Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		DC9E6625022C493D9E6D3176 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Regular.ttf"; path = "../assets/fonts/Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -60,6 +80,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6FF4070C94E44D8595A9855D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				347E515C4BE740A5896E039F /* Cormorant Garamond.ttf */,
+				7776683D94BF49D086A4371F /* CormorantGaramond-Bold.ttf */,
+				50909C6506B9438CA91590B4 /* Poppins-Black.ttf */,
+				8E1C7AE1C4B84AD29EC6F4A1 /* Poppins-Bold.ttf */,
+				7F00C1A4A8784C039BC9C2EA /* Poppins-ExtraLight.ttf */,
+				15436EE2ED43405B99C694E1 /* Poppins-Light.ttf */,
+				1A152C2C181B44E889D2AE04 /* Poppins-Medium.ttf */,
+				DC9E6625022C493D9E6D3176 /* Poppins-Regular.ttf */,
+				932D61BE1A8F426C85E45340 /* Poppins-SemiBold.ttf */,
+				14B744694B98426AAA6EEAED /* Poppins-Thin.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +112,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				6FF4070C94E44D8595A9855D /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -161,6 +199,16 @@
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				BBDCE8E09D040D23F0B1E09D /* PrivacyInfo.xcprivacy in Resources */,
+				4B9EA2770DF94B0FA68E6E69 /* Cormorant Garamond.ttf in Resources */,
+				2F352AF9BAB343A0BD90C17F /* CormorantGaramond-Bold.ttf in Resources */,
+				6FD4A0946A024B1085A64A89 /* Poppins-Black.ttf in Resources */,
+				3803C41FAB48459293F34AA9 /* Poppins-Bold.ttf in Resources */,
+				C6A5439E2D69416C8A08725E /* Poppins-ExtraLight.ttf in Resources */,
+				D1F8C6B6A0BB4F8789DACA71 /* Poppins-Light.ttf in Resources */,
+				18CE20E210D24AE3831C2F48 /* Poppins-Medium.ttf in Resources */,
+				A83A4EA77F71466BB6303C32 /* Poppins-Regular.ttf in Resources */,
+				1988D02DBAE848B9B7386985 /* Poppins-SemiBold.ttf in Resources */,
+				4ECBC804390147B19E5A3B0D /* Poppins-Thin.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +308,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6AWQQCT6VP;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = QuantityMeasurement/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
@@ -273,7 +322,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.qm.www;
 				PRODUCT_NAME = QuantityMeasurement;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -288,6 +337,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6AWQQCT6VP;
 				INFOPLIST_FILE = QuantityMeasurement/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -300,7 +350,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.qm.www;
 				PRODUCT_NAME = QuantityMeasurement;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";

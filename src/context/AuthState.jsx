@@ -18,7 +18,12 @@ const AuthState = props => {
       }
     };
     fetchUsers();
-  }, [users]);
+    const checkAuth = async () => {
+      const isLogged = await isAuthenticated();
+      setIsLoggedIn(isLogged);
+    };
+    checkAuth();
+  }, [isLoggedIn]);
 
   const handelLogin = async (email, password) => {
     try {

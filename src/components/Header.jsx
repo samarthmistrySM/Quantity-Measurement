@@ -1,12 +1,14 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import {View, Text, StyleSheet} from 'react-native';
+import AuthContext from '../context/AuthContext';
 
 const Header = () => {
+  const { loggedUser } = useContext(AuthContext);
   return (
     <View style={styles.container}>
       <View style={styles.headerBody}>
         <Text style={styles.text}>Welcome! 🫡</Text>
-        <Text style={styles.username}>Samarth</Text>
+        <Text style={styles.username}>{loggedUser.fullname}</Text>
       </View>
     </View>
   );

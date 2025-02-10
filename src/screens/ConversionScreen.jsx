@@ -1,8 +1,6 @@
 import React, {useState} from 'react';
-import {View, Text, StyleSheet, TouchableOpacity, Image} from 'react-native';
-import LinearGradient from 'react-native-linear-gradient';
+import {View, StyleSheet} from 'react-native';
 import PickerModal from '../components/PickerModal';
-import {useNavigation} from '@react-navigation/native';
 import ScreenView from '../components/ScreenView';
 import KeyPad from '../components/KeyPad';
 

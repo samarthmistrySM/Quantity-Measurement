@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import LoginScreen from '../screens/Auth/LoginScreen';
@@ -8,6 +8,8 @@ import ConversionScreen from '../screens/ConversionScreen';
 import LengthScreen from '../screens/LengthScreen';
 import WeightScreen from '../screens/WeightScreen';
 import TempScreen from '../screens/TempScreen';
+import AuthContext from '../context/AuthContext';
+
 
 // import HomeScreen from '../screens/HomeScreen';
 
@@ -38,9 +40,10 @@ const MainNavigator = () => {
 };
 
 const Navigator = () => {
+    const {isLoggedIn} = useContext(AuthContext);
   return (
     <NavigationContainer>
-      <MainNavigator/>
+        {isLoggedIn ? <MainNavigator/> : <RootNavigator/>}
     </NavigationContainer>
   );
 };

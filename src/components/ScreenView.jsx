@@ -20,7 +20,7 @@ const ScreenView = ({
       style={styles.screen}>
       <View style={styles.screenContainer}>
         <TouchableOpacity onPress={() => navigation.goBack()}>
-          <Text style={styles.goBack}>GO BACK</Text>
+          <Image style={styles.goBack} source={require('../assets/arrow.left.png')} />
         </TouchableOpacity>
         <View>
           <View
@@ -70,13 +70,18 @@ const ScreenView = ({
 const styles = StyleSheet.create({
   goBack: {
     color: '#fff',
-    fontSize: 16,
+    width:30,
+    height:30,
+    objectFit:'contain',
+    tintColor: '#fff',
+    marginTop:'25%',
   },
   screen: {
-    height: '30%',
+    height: '45%',
     width: '100%',
     justifyContent: 'center',
     alignItems: 'center',
+    marginTop: '-25%',
   },
   screenContainer: {
     width: '100%',

@@ -1,9 +1,12 @@
 import React from 'react';
 import Navigator from './navigation/Navigator';
+import AuthState from "./context/AuthState";
 
 const App = () => {
   return (
-    <Navigator/>
+    <AuthState>
+      <Navigator/>
+    </AuthState>
   );
 };
 

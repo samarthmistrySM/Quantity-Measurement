@@ -4,36 +4,80 @@ import {
   View,
   SafeAreaView,
   TouchableOpacity,
+  Alert,
 } from 'react-native';
-import React from 'react';
+import React, { useContext } from 'react';
 import Header from '../components/Header';
 import {useNavigation} from '@react-navigation/native';
+import MenuButton from '../components/Ui/MenuButton';
+import AuthContext from '../context/AuthContext';
 
 const HomeScreen = () => {
   const navigation = useNavigation();
+  const {handleLogout, loggedUser} = useContext(AuthContext);
+  const buttons = [
+    {
+      title: 'Length',
+      icon: require('../assets/ruler.fill.png'),
+      screen: 'Length',
+      alert: false,
+    },
+    {
+      title: 'Weight',
+      icon: require('../assets/scalemass.fill.png'),
+      screen: 'Weight',
+      alert: false,
+    },
+    {
+      title: 'Temperature',
+      icon: require('../assets/thermometer.variable.png'),
+      screen: 'Temperature',
+      alert: false,
+    },
+    {
+      title: 'Area',
+      icon: require('../assets/square.dashed.png'),
+      screen: 'Length',
+      alert: true,
+    },
+    {
+      title: 'Volume',
+      icon: require('../assets/cube.transparent.fill.png'),
+      screen: 'Weight',
+      alert: true,
+    },
+    {
+      title: 'Money',
+      icon: require('../assets/banknote.fill.png'),
+      screen: 'Temperature',
+      alert: true,
+    },
+  ];
+
+  const handleAlert = () => {
+    Alert.alert('Coming Soon', 'Coming Soon');
+  };
   return (
     <SafeAreaView style={styles.safeArea}>
       <Header />
-      <View style={styles.bodyContainer}>
-        <View style={styles.body}>
-          <TouchableOpacity
-            style={styles.btn}
-            onPress={() => navigation.navigate('Length')}>
-            <Text style={styles.btnText}>Length</Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            style={styles.btn}
-            onPress={() => navigation.navigate('Weight')}>
-            <Text style={styles.btnText}>Weight</Text>
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.btn}>
-            <Text
-              style={styles.btnText}
-              onPress={() => navigation.navigate('Temperature')}>
-              Temperature
-            </Text>
-          </TouchableOpacity>
+      <View style={styles.body}>
+        <View style={styles.btnContainer}>
+          {buttons.map((btn, index) => (
+            <MenuButton
+              key={index}
+              title={btn.title}
+              icon={btn.icon}
+              onPress={
+                btn.alert ? handleAlert : () => navigation.navigate(btn.screen)
+              }
+            />
+          ))}
         </View>
+        <TouchableOpacity
+          style={styles.logOutBtn}
+          onPress={() => handleLogout()}>
+          <Text style={styles.logOutBtnText}>Logout</Text>
+        </TouchableOpacity>
       </View>
     </SafeAreaView>
   );
@@ -43,43 +87,41 @@ export default HomeScreen;
 
 const styles = StyleSheet.create({
   safeArea: {
-    backgroundColor: '#fff',
-  },
-  bodyContainer: {
-    width: '100%',
-    height: '80%',
     backgroundColor: '#019bff',
+    flex: 1,
   },
   body: {
-    width: '100%',
-    height: '100%',
+    flex: 1,
     backgroundColor: '#fff',
-    borderStartEndRadius: 40,
-    position: 'relative',
-    justifyContent: 'center',
+    borderTopRightRadius: 40,
     alignItems: 'center',
-  },
-  btn: {
-    backgroundColor: '#019bff',
+    paddingVertical: 20,
     paddingHorizontal: 20,
-    paddingVertical: 10,
-    marginBottom: 40,
+  },
+  btnContainer: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'space-between',
+    width: '100%',
+    paddingTop: 20,
+  },
+  logOutBtn: {
+    backgroundColor: '#019bff',
     borderRadius: 50,
     shadowColor: '#000',
-    shadowOffset: {
-      width: -4,
-      height: 5,
-    },
-    shadowOpacity: 0.4,
-    shadowRadius: 5,
-    elevation: 10,
-    width: 200,
+    shadowOffset: {width: -2, height: 4},
+    shadowOpacity: 0.5,
+    shadowRadius: 4,
+    elevation: 8,
+    width: '90%',
+    marginTop: 30,
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingVertical: 20,
   },
-  btnText: {
-    fontFamily: 'Poppins',
-    fontSize: 25,
+  logOutBtnText: {
+    fontSize: 22,
     color: '#fff',
-    fontWeight: 300,
-    textAlign: 'center',
+    fontWeight: '600',
   },
 });

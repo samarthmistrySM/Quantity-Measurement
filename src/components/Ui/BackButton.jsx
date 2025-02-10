@@ -24,6 +24,6 @@ const styles = StyleSheet.create({
     width: 20,
     height: 25,
     objectFit: 'contain',
-    tintColor: 'darkblue',
+    tintColor: '#fff',
   },
 });
